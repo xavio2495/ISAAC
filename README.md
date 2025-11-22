@@ -1,7 +1,7 @@
 # ISAAC
 Check it out: https://2omsnmby.pinit.eth.limo/
 
-**defi-terminal** (codename) is an open-source developer tool built on 1inch offering a command-based interface for interacting with Ethereum protocols and querying on-chain data. It acts like a programmable shell for DeFi — built for developers, researchers, and power users who need a fast, composable alternative to fragmented dashboards. We built this as a proof of concept for 1inch Unite Defi
+**defi-terminal** (codename) is an open-source developer tool built on 1inch offering a command-based interface for interacting with Ethereum protocols and querying on-chain data. It acts like a programmable shell for DeFi — built for developers, researchers, and power users who need a fast, composable alternative to fragmented dashboards.
 
 ### Features
 - Command line in the browser for ease of access DeFi on different protocols (with wallet)

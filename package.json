@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "build:frontend": "cross-env BUILD_TARGET=frontend next build",
+    "build:frontend": "node scripts/build-frontend.js",
     "build:backend": "cross-env BUILD_TARGET=backend next build",
     "export": "next export",
     "start": "next start",
