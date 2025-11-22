@@ -1,0 +1,38 @@
+{
+  "name": "defi-terminal1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@1inch/limit-order-sdk": "^5.0.3",
+    "@rainbow-me/rainbowkit": "^2.2.8",
+    "@tanstack/react-query": "^5.83.0",
+    "@vercel/analytics": "^1.5.0",
+    "lightweight-charts": "^4.2.3",
+    "lodash.merge": "^4.6.2",
+    "next": "15.4.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "recharts": "^3.1.0",
+    "viem": "^2.33.1",
+    "wagmi": "^2.16.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/lodash.merge": "^4.6.9",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.4",
+    "pino-pretty": "^13.1.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
