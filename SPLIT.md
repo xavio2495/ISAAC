@@ -49,22 +49,28 @@ npm run build:frontend
 npm run build:backend
 ```
 
-### 4. Deploy to Vercel
+### 4. Deploy to Production
 
-#### Backend Deployment
+#### Backend Deployment (Vercel)
+
 ```bash
 # Install Vercel CLI
 npm i -g vercel
 
-# Deploy (will auto-detect Next.js and create API routes)
-vercel
+# Deploy backend (API routes only)
+npm run build:backend
+vercel --prod
 
 # Set environment variable
 vercel env add ONE_INCH_API_KEY
 ```
 
-#### Frontend Deployment to IPFS
+#### Frontend Deployment (IPFS)
+
 ```bash
+# Build frontend (static export)
+npm run build:frontend
+
 # The out/ directory contains your static frontend
 # Upload the contents of out/ to IPFS
 # Or use a service like Fleek, Pinata, etc.
@@ -75,6 +81,7 @@ vercel env add ONE_INCH_API_KEY
 After deploying the backend, update the Vercel URL in these files:
 
 **src/components/commands.ts:**
+
 ```typescript
 const baseUrl = process.env.NODE_ENV === 'production'
   ? 'https://your-vercel-app.vercel.app' // Replace with your actual Vercel URL
@@ -82,6 +89,7 @@ const baseUrl = process.env.NODE_ENV === 'production'
 ```
 
 **src/components/ChartModal.tsx:**
+
 ```typescript
 const baseUrl = process.env.NODE_ENV === 'production'
   ? 'https://your-vercel-app.vercel.app' // Replace with your actual Vercel URL
